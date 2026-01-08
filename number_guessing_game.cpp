@@ -5,22 +5,22 @@ using namespace std;
 
 int main()
 {
-    int number,guess;
+    int n,guess;
     srand(time(0));
-    number=rand()%100+1;   
+    n=rand()%100+1;   
     cout<<"Guess the number between 1 and 100\n";
     do
     {
-        cout<<"Enter your guess: ";
+        cout<<"Enter guess: ";
         cin>>guess;
-        if(guess>number)
-            cout<<"Too high! Try again.\n";
-        else if(guess<number)
-            cout<<"Too low! Try again.\n";
+        if(guess>n)
+            cout<<"EHHH What a noob Too high! Try again.\n";
+        else if(guess<n)
+            cout<<"EHHH Why so noob Too low! Try again.\n";
         else
             cout<<"Congratulations! Yay you guessed the correct number.\n";
 
-    } while(guess!=number);
+    } while(guess!=n);
 
 return 0;
 }
